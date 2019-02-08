@@ -27,25 +27,6 @@ document.querySelector('.backspace')
         display.value = display.value.substring(0, display.value.length - 1)
     });
 
-document.querySelector('.memory-save')
-    .addEventListener('click', function() {
-        memory = display.value;
-
-    });
-
-document.querySelector('.memory-return')
-    .addEventListener('click', function() {
-        if (memory !== undefined) {
-            display.value = memory;
-        }
-
-    });
-
-document.querySelector('.memory-clear')
-    .addEventListener('click', function() {
-        memory = '';
-
-    });
 
 document.querySelector('.sqrt')
     .addEventListener('click', function() {
