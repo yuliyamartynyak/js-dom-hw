@@ -1,19 +1,18 @@
-const display = document.querySelector('.calculator input[name=display]')
+const display = document.querySelector('.calculator input[name=display]');
 
 document.querySelectorAll('.digits button, .opers button')
-.forEach( button => button.addEventListener('click', pressDigitOrOper));
+     .forEach( button => button.addEventListener('click', pressDigitOrOper));
 
 function pressDigitOrOper(e){
-    display.value += e.target.innerText;
+ display.value += e.target.innerText;
 }
 
 document.querySelector('.result')
-.addEventListener('click', function(){
-    display.value = eval(display.value);
-}
-)
+    .addEventListener('click', function(){
+ display.value = eval(display.value);
+});
 
 document.querySelector('.clear-all')
-.addEventListener('click', function(){
+    .addEventListener('click', function(){
     display.value = "";
-})
+});
